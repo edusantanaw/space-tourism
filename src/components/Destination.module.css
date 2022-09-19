@@ -1,0 +1,226 @@
+.destination {
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.pick {
+    width: 100%;
+    height: 100%;
+    padding: 150px 180px;
+}
+
+.pick p,
+.pick span {
+    color: #fff;
+    font-family: 'Barlow Condensed';
+    font-size: 28px;
+    letter-spacing: 4.72px;
+    font-weight: 400;
+}
+
+.pick img {
+    width: 360px;
+    margin-top: 70px;
+    margin-left: 90px;
+    transition: 01s;
+}
+
+.moon {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.moon ul {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.moon ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Barlow Condensed';
+    letter-spacing: 2.7px;
+    color: #d0d6f9;
+}
+
+.moon li {
+    margin-right: 21px;
+    padding-bottom: 10px;
+    transition: 0.1s;
+}
+
+.moon li:hover {
+    border-bottom: 3px solid #d0d6f9;
+}
+
+.active {
+    border-bottom: 3px solid #fff;
+    transition: 0.1s;
+    color: #fff;
+}
+
+.moon li.active a {
+    color: #fff;
+}
+
+
+.moon h1 {
+    font-size: 100px;
+    font-family: 'Bellefair';
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.moon p {
+    font-family: 'Barlow';
+    font-size: 18px;
+    line-height: 1.3;
+    color: #d0d6f9;
+    max-width: 442px;
+    font-weight: 400;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #d0d6f9;
+}
+
+.distance {
+    display: flex;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.distance p {
+    margin-top: 30px;
+    border-bottom: none;
+    padding-bottom: 14px;
+    font-size: 14px;
+    font-family: 'Barlow Condensed';
+    letter-spacing: 2.36px;
+    color: #d0d6f9;
+}
+
+.distance span {
+    font-size: 28px;
+    font-family: 'Bellefair';
+    color: #fff;
+    font-weight: 400;
+    margin-right: 70px;
+}
+
+@media (max-width: 800px) {
+    .destination {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pick {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 120px;
+    }
+    .pick p, .pick span{
+        align-self: flex-start;
+        margin-left: 30px;
+    }
+    .pick img{
+        margin-left: 0px;
+        width: 300px;
+    }
+
+    .moon {
+        padding-top: 0px;
+        align-items: center;
+        justify-content: flex-start;
+        align-self: center;
+    }
+    .moon h1{
+        font-size: 80px;
+    }
+    .moon p{
+        text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 1.05px;
+    }
+    .distance{
+        width: 60%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .distance p{
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .distance span{
+        margin-right: 0px;
+        font-size: 28px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 550px){
+    .destination{
+        background-image: url('../assets/destination/background-destination-mobile.jpg');
+        background-size: cover;
+        align-items: center;
+        display: flex;
+    }
+    .pick{
+        height: auto;
+    }
+    .pick p, .pick span{
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        align-self: center;
+        margin-left: 0px;
+    }
+    .pick img{
+        width: 170px;
+        margin-top: 30px;
+    }
+    .moon{
+        height: 100%;
+        width: 100%;
+        align-self: flex-start;
+    }
+    .moon ul{
+        margin-top: 20px;
+        margin-bottom: 23px;
+    }
+    .moon h1{
+        font-size: 56px;
+    }
+    .moon ul{
+        padding-top: 10px;
+    }
+    .moon p{
+        font-size: 15px;
+        line-height: 1.4;
+        padding-bottom: 30px;
+        max-width: 400px;
+    }
+    .distance{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .distance p{
+        margin-top: 30px;
+        margin-bottom: 7px;
+        padding-bottom: 0px;
+    }
+    .distance span{
+        font-size: 28px;
+        margin-bottom: 14px;
+    }
+}

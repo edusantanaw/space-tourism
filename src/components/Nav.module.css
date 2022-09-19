@@ -1,0 +1,138 @@
+header {
+    padding: 50px 0px 0px 40px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-right: 0;
+    background-color: rgba(255, 255, 255, 0.041);
+    height: 96px;
+    padding-left: 10px;
+    margin-left: -40px;
+    backdrop-filter: blur(20px);
+}
+
+header hr {
+    width: 750px;
+    z-index: 1;
+    color: #979797;
+}
+
+header a {
+    padding: 10px;
+    margin-left: 40px;
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2.7px;
+}
+
+header>img:first-child {
+    background-color: #fff;
+    width: 48px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+header span {
+    font-weight: 700;
+}
+
+.menu {
+    display: none;
+}
+
+@media (max-width:800px) {
+    hr {
+        display: none;
+    }
+
+    header {
+        padding-top: 0px;
+        justify-content: space-between;
+    }
+
+    header li span {
+        display: none;
+    }
+
+    header ul {
+        width: 60%;
+        justify-content: space-around;
+    }
+
+    header a {
+        font-size: 14px;
+        margin-left: 0px;
+    }
+}
+
+.close {
+    display: none;
+}
+
+@media (max-width: 550px) {
+    .menu {
+        display: block;
+        margin-right: 20px;
+        width: 40px;
+    }
+
+    header ul {
+        display: none;
+        padding: 0px 0px 0px 0px;
+    }
+
+    header ul.show {
+        display: flex;
+        height: 100vh;
+        position: fixed;
+        margin-left: 50%;
+        width: 50%;
+        justify-content: flex-start;
+        flex-direction: column;
+        backdrop-filter: blur(30px);
+        z-index: 1;
+    }
+
+    header ul.show span {
+        display: inline;
+    }
+
+    .menu#show {
+        display: none;
+    }
+
+    header li {
+        align-self: flex-start;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+
+    header img:first-child {
+        margin-left: 0px;
+    }
+
+    .close#show {
+        display: block;
+        align-self: flex-start;
+        width: 15px;
+        margin-top: -20px;
+        background-color: red;
+    }
+
+    header {
+        justify-content: space-between;
+        align-items: start;
+        width: 100%;
+        margin-top: 25px;
+    }
+}
